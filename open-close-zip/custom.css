@@ -79,3 +79,13 @@ z-index: 999 !important;
     #startButtonArea button {
         margin-top: calc(50vh - 35px) !important;
         }
+        
+       
+        .cameraContainer {
+        max-width: 25% !important;
+        }
+        
+          .cameraContainer canvas {
+        max-width: 100% !important;
+        }
+       
