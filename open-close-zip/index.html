@@ -42,7 +42,7 @@ var timer = window.setInterval(function() {
    clearInterval(timer);
   if (seconds > 40) {
       Swal.fire({
-  title: 'Congratulations, you completed the test in a great time! \n Your score is: ' + score,
+  title: 'Congratulations, you completed the test in a great time! \n No abonormal findings. \n Your score is: ' + score,
   showDenyButton: false,
   showCancelButton: false,
   confirmButtonText: `Play Again`,
@@ -59,7 +59,7 @@ var timer = window.setInterval(function() {
 });
   } else if (seconds > 20) {
       Swal.fire({
-  title: 'Congratulations, you completed the test in a good time! \n Your score is: ' + score,
+  title: 'Congratulations, you completed the test in a good time! \n Slight divergence from normal. \n Your score is: ' + score,
   showDenyButton: false,
   showCancelButton: false,
   confirmButtonText: `Play Again`,
@@ -77,7 +77,7 @@ var timer = window.setInterval(function() {
   }
   else {
       Swal.fire({
-  title: 'Congratulations, you completed the test! \n Your score is: ' + score,
+  title: 'Congratulations, you completed the test! \n Great Difficulty. \n Your score is: ' + score,
   showDenyButton: false,
   showCancelButton: false,
   confirmButtonText: `Play Again`,
@@ -101,7 +101,7 @@ var timer = window.setInterval(function() {
      clearInterval(timer);
      checkIfGameEnded2 = 1;
     Swal.fire({
-title: 'Sorry, you did not manage to complete the test... \n Your score is: ' + score,
+title: 'Sorry, you did not manage to complete the test... \n Partially performed. \n Your score is: ' + score,
 showDenyButton: true,
 showCancelButton: false,
 confirmButtonText: `Play Again`,
@@ -125,7 +125,7 @@ var checkIfGameEnded2 = 1;
 function quit() {  
 checkIfGameEnded2 = 2;
 Swal.fire({
-title: 'Sorry, you did not manage to complete the test...',
+title: 'Sorry, you did not manage to complete the test... \n Not performed at all. ',
 showDenyButton: true,
 showCancelButton: false,
 confirmButtonText: `Play Again`,
